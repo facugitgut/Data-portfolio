@@ -91,4 +91,5 @@ SELECT ID_libro, titulo, ID_autor FROM libros
 
 El resultado que devuelve es el siguiente: 
 
+<img width="331" height="424" alt="consulta libros" src="https://github.com/user-attachments/assets/6484509c-3ba7-44d7-a08b-80c3114e9325" />
 

@@ -31,3 +31,23 @@ CREACIÓN DE TABLAS
 
 Se procede a crear las siguientes tablas a través de la sintaxis  de SQL Server, utilizando el entorno de SSMS.
 
+Las siguientes líneas de código crean la tabla 'autores' con un campo ID_autor clave primaria auto incremental
+con la restricción de no ser nulo, y el campo 'nombre_apellido' del tipo varchar con un máximo de 50 caracteres y
+la restrición de no ser nulo.
+
+CREATE TABLE autores(
+	ID_autor INT PRIMARY KEY IDENTITY (1,1) NOT NULL,
+	nombre_apellido VARCHAR(50) NOT NULL
+);
+
+Para la siguiente tabla se incluyó el campo ID_autor como clave foranea, especificando en la última línea que hace referencia
+al campo ID_autor de la tabla 'autores'.
+
+CREATE TABLE libros(
+	ID_libro INT PRIMARY KEY IDENTITY (1,1) NOT NULL,
+	titulo VARCHAR(50) NOT NULL,
+	ID_autor INT NOT NULL,
+	publicacion_year INT,
+	FOREIGN KEY (ID_autor) REFERENCES autores(ID_autor)
+
+

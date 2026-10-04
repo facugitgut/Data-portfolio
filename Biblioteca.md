@@ -93,3 +93,24 @@ El resultado que devuelve es el siguiente:
 
 <img width="331" height="424" alt="consulta libros" src="https://github.com/user-attachments/assets/6484509c-3ba7-44d7-a08b-80c3114e9325" />
 
+Para la tabla 'autores' se ingresan los siguientes registros:
+
+INSERT INTO autores(nombre_apellido)
+VALUES ('Ursula K. Le Guin'),
+('Robin Hobb'),
+('Susanna Clarke'),
+('Stephen King'),
+('Glen Cook'),
+('J.R.R. Tolkien'),
+('Angélica Gorodischer'),
+('Brandon Sanderson');
+
+La siguiente consulta es para realizar una prueba:
+
+SELECT * FROM autores;
+
+El resultado que devuelve es el siguiente:
+
+<img width="203" height="206" alt="image" src="https://github.com/user-attachments/assets/80721893-f195-4c88-81c2-dc8d094425b4" />
+
+

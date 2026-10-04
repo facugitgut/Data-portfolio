@@ -50,4 +50,45 @@ CREATE TABLE libros(
 	publicacion_year INT,
 	FOREIGN KEY (ID_autor) REFERENCES autores(ID_autor)
 
+CREACIÓN DE REGISTROS EN TABLAS
+
+Una vez creadas las tablas 'libros' y 'autores', se prosigue con la creación de registros. 
+Para la tabla 'libros' se insertan los siguientes registros. Notar que se obvia incluir en la sintaxis al campo 'ID_libros' 
+por ser autoincremental, es decir, se crea automaticamente con cada nuevo registro y se incrementa en una unidad.
+
+
+INSERT INTO libros(titulo, ID_autor)
+VALUES ('El nombre del mundo es bosque',1),
+('La rueda celeste',1),
+('El mundo de Rocannon',1),
+('Los desposeidos',1),
+('La mano izquierda de la oscuridad',1),
+('Un mago de terramar',1),
+('Las tumbas de atuan',1),
+('Aprendiz de asesino',2),
+('Las naves de la magia',2),
+('La mision del bufon',2),
+('Guardianes de Dragones',2),
+('El asesino del bufon',2),
+('Piranesi',3),
+('It',4),
+('El resplandor',4),
+('La torre oscura, el pistolero',4),
+('La primera cronica',5),
+('Sombras fluctuantes',5),
+('La rosa blanca',5),
+('El silmarillion',6),
+('El hobbit',6),
+('El señor de los anillos',6),
+('Kalpa imperial',7),
+('El imperio final',8),
+('Elantris',8),
+('Palabras radiantes',8);
+
+La siguiente consulta es de prueba para ver que todo se registró correctamente.
+
+SELECT ID_libro, titulo, ID_autor FROM libros
+
+El resultado que devuelve es el siguiente: 
+
 

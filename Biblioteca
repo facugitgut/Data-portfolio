@@ -1,0 +1,9 @@
+La siguiente documentación registra la creación de una base de datos para una biblioteca, en donde se especifican las tablas a crear,
+los registros de las mismas y el tipo de dato con el que se trabajarán. Para este proyecto personal se utilizó el motor SQL SERVER EXPRESS y 
+el entorno SQL SERVER MANAGEMENT STUDIO (SSMS)
+
+DIAGRAMA DE TABLAS
+
+Para tener una visión de las tablas a crear y las relaciones que se utilizarán por medio de las claves foraneas, se realizó el siguiente esquema ilustrativo,
+en donde se especifica en cada fila de cada tabla el nombre de la columna y el tipo de dato que almacenará
+

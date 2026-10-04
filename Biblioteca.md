@@ -100,4 +100,30 @@ El resultado que devuelve es el siguiente:
 
 <img width="203" height="206" alt="image" src="https://github.com/user-attachments/assets/80721893-f195-4c88-81c2-dc8d094425b4" />
 
+CONSULTA UTILIZANDO LEFT JOIN
+
+Se tienen las siguientes tablas, a través de consultas distintas.
+
+SELECT ID_libro, titulo, ID_autor FROM libros
+
+<img width="331" height="424" alt="consulta libros" src="https://github.com/user-attachments/assets/6484509c-3ba7-44d7-a08b-80c3114e9325" />
+
+SELECT ID_libro, titulo, ID_autor FROM libros
+
+<img width="331" height="424" alt="consulta libros" src="https://github.com/user-attachments/assets/6484509c-3ba7-44d7-a08b-80c3114e9325" />
+
+Se observa que en la tabla 'libros' se obtienen todos los libros almacenados en la base de dato, junto con su ID_libro y su ID_autor. Se busca relacionar la tabla 'libros' con la tabla 'autores' para obtener una única tabla donde muestre el nombre de los libros y de sus autores. Para obtener este resultado, se utiliza la cláusula JOIN, puntualmente un LEFT JOIN.
+
+SELECT titulo, autores.nombre_apellido as autor
+FROM libros
+LEFT JOIN autores
+ON libros.ID_autor = autores.ID_autor
+ORDER BY nombre_apellido;
+
+La consulta anterior selecciona el campo 'titulo' de la tabla 'libros' y el campo 'nombre_apellido' de la tabla 'autores,
+asignándosele el alias 'autor'. El LEFT JOIN une la tabla 'libros' con 'autores' y se establece la condición de de comparación entre el ID_autor de la tabla 'libros' para que coincida con el ID_autor de la tabla 'autores'. Luego se los ordena por nombre_apellido.
+
+El resultado la siguiente tabla:
+
+<img width="299" height="317" alt="image" src="https://github.com/user-attachments/assets/fd775f9b-2a98-47bd-8fea-3649763a75e4" />
 

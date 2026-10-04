@@ -7,21 +7,8 @@ DIAGRAMA DE TABLAS
 Para tener una visión de las tablas a crear y las relaciones que se utilizarán por medio de las claves foraneas, se realizó el siguiente esquema ilustrativo,
 en donde se especifica en cada fila de cada tabla el nombre de la columna y el tipo de dato que almacenará
 
-Libros
-PK ID_libro INT IDENTITY (1,1) NOT NULL
-Titulo VARCHAR (50) NOT NULL
-FK ID_autor INT NOT NULL
+<img width="851" height="344" alt="image" src="https://github.com/user-attachments/assets/1973bb32-2a12-4b14-a1d4-d5c9d77c8991" />
 
-Autores
-PK ID_autor INT IDENTITY (1,1) NOT NULL
-Nombre VARCHAR (50) NOT NULL
-Apellido VARCHAR (50) NOT NULL
-
-Préstamos
-PK ID_prestamo INT IDENTITY (1,1) NOT NULL
-FK ID_libro INT NOT NULL
-Fecha_prestamo DATE NOT NULL
-Fecha_devolucion DATE NOT NULL
 
 Los enlaces presentes son:
 ID_autor de la tabla Autores es clave primaria, y se vincula con ID_autor de la tabla Libros, que es clave foranea.
